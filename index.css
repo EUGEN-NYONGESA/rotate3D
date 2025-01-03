@@ -160,7 +160,7 @@ body {
     }
 
     .banner .content .model {
-        background-size: contain; /* Adjust for smaller screens */
+        background-size: cover; /* Adjust for smaller screens */
         height: 75vh; /* Reduce height for smaller screens */
         margin-bottom: 0;
     }
@@ -200,6 +200,7 @@ body {
         background-size: contain;
         height: 70vh; /* Moderate height for medium screens */
         margin-bottom: 0;
+        width: 100%;
     }
 }
 
