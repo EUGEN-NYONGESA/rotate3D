@@ -127,3 +127,110 @@ body {
     background-position: top center;
     z-index: 1; /* Ensure the background is behind rotating images */
 }
+
+/* Small screens (e.g., phones) */
+@media (max-width: 600px) {
+    .banner .slider {
+        width: 150px;
+        height: 150px;
+        top: 15%;
+        left: calc(50% - 75px);
+        z-index: 2;
+    }
+
+    .banner .slider .item img {
+        width: 60%;
+    }
+
+    .banner .content h1 {
+        font-size: 2.5em;
+    }
+
+    .banner .content .author {
+        font-size: 0.8em;
+        z-index: 3;
+        color: #d6bfa7;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .banner .slider .item {
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(250px);
+    }
+
+    .banner .content .model {
+        background-size: contain; /* Adjust for smaller screens */
+        height: 70vh; /* Reduce height for smaller screens */
+    }
+}
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .banner .slider {
+        width: 180px;
+        height: 180px;
+        top: 18%;
+        left: calc(50% - 90px);
+        z-index: 2;
+    }
+
+    .banner .slider .item img {
+        width: 55%;
+    }
+
+    .banner .content h1 {
+        font-size: 3.5em;
+    }
+
+    .banner .content .author {
+        font-size: 0.85em;
+        z-index: 3;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .banner .slider .item {
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(300px);
+    }
+
+    .banner .content .model {
+        background-size: contain;
+        height: 70vh; /* Moderate height for medium screens */
+    }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1025px) {
+    .banner .slider {
+        width: 220px;
+        height: 200px;
+        top: 8%;
+        left: calc(50% - 110px);
+    }
+
+    .banner .slider .item img {
+        width: 50%;
+    }
+
+    .banner .content h1 {
+        font-size: 4.5em;
+    }
+
+    .banner .content .author {
+        font-size: .7em;
+        
+    }
+
+    .banner .slider .item {
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(350px);
+    }
+
+    .banner .content .model {
+        background-size: contain;
+        height: 80vh; /* Full height for large screens */
+    }
+}
