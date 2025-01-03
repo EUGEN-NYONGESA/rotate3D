@@ -161,7 +161,8 @@ body {
 
     .banner .content .model {
         background-size: contain; /* Adjust for smaller screens */
-        height: 210%; /* Reduce height for smaller screens */
+        height: 75vh; /* Reduce height for smaller screens */
+        margin-bottom: 0;
     }
 }
 
@@ -197,7 +198,8 @@ body {
 
     .banner .content .model {
         background-size: contain;
-        height: 193%; /* Moderate height for medium screens */
+        height: 70vh; /* Moderate height for medium screens */
+        margin-bottom: 0;
     }
 }
 
@@ -231,6 +233,7 @@ body {
 
     .banner .content .model {
         background-size: contain;
-        height: 230%; /* Full height for large screens */
+        height: 80vh; /* Full height for large screens */
+        margin-bottom: 0;
     }
 }
